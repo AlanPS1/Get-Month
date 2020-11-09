@@ -21,4 +21,4 @@ This was copied and pasted from a script I wrote. The function, "Get-Month" was 
 + Handle cultures. See [Get-Culture](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-culture?view=powershell-7)
 
 
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg =67x65 "The Stormtroopocat")
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat" =67x65)
