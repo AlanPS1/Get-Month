@@ -20,5 +20,4 @@ This was copied and pasted from a script I wrote. The function, "Get-Month" was 
 + Handle [format specifiers](https://docs.microsoft.com/en-us/dotnet/standard/base-types/standard-date-and-time-format-strings#table-of-format-specifiers)
 + Handle cultures. See [Get-Culture](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-culture?view=powershell-7)
 
-
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat" =67x65)
+<img src="https://octodex.github.com/images/stormtroopocat.jpg" alt="The Stormtroopocat" width="65" height="67"/>
