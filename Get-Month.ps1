@@ -68,7 +68,7 @@ Function Get-Month {
 
     .NOTES
 
-        Author:  Alan Wightman
+        Author:  Alan W
         Website: http://AlanPs1.io
         Twitter: @AlanO365
 
