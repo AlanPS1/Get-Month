@@ -103,8 +103,8 @@ Function Get-Month {
     $MonthYear = ($CurrentDate).ToUniversalTime().Year
 
     # For the default Get-Month only - Params overwrite below if in use.    
-    $Global:StartOfMonth = Get-Date -Day 1 -Hour 0 -Minute 0 -Second 0 -Millisecond 0
-    $Global:EndOfMonth = ($StartOfMonth).AddMonths(1).AddTicks(-1)
+    $StartOfMonth = Get-Date -Day 1 -Hour 0 -Minute 0 -Second 0 -Millisecond 0
+    $EndOfMonth = ($StartOfMonth).AddMonths(1).AddTicks(-1)
 
     # For all non defaul when either paramter is binded, -ThisMonth, -LastMonth, -WhichMonth & -NextMonth
     switch ($PSBoundParameters.Keys) {
@@ -112,8 +112,8 @@ Function Get-Month {
         # Get-Month -ThisMonth
         ThisMonth { 
             
-            $Global:StartOfMonth = Get-Date -Day 1 -Hour 0 -Minute 0 -Second 0 -Millisecond 0
-            $Global:EndOfMonth = ($StartOfMonth).AddMonths(1).AddTicks(-1)
+            $StartOfMonth = Get-Date -Day 1 -Hour 0 -Minute 0 -Second 0 -Millisecond 0
+            $EndOfMonth = ($StartOfMonth).AddMonths(1).AddTicks(-1)
 
         }
 
@@ -129,8 +129,8 @@ Function Get-Month {
             }
 
             $Month = (($CurrentDate)).ToUniversalTime().AddMonths(-1).Month
-            $Global:StartOfMonth = Get-Date -Month $Month -Year $MonthYear -Day 1 -Hour 0 -Minute 0 -Second 0 -Millisecond 0
-            $Global:EndOfMonth = ($StartOfMonth).AddMonths(1).AddTicks(-1)
+            $StartOfMonth = Get-Date -Month $Month -Year $MonthYear -Day 1 -Hour 0 -Minute 0 -Second 0 -Millisecond 0
+            $EndOfMonth = ($StartOfMonth).AddMonths(1).AddTicks(-1)
 
         }
 
@@ -141,18 +141,18 @@ Function Get-Month {
 
                 Switch ($Item) {
 
-                    January { $Month = '1' }
-                    February { $Month = '2' }
-                    March { $Month = '3' }
-                    April { $Month = '4' }
-                    May { $Month = '5' }
-                    June { $Month = '6' }
-                    July { $Month = '7' }
-                    August { $Month = '8' }
-                    September { $Month = '9' }
-                    October { $Month = '10' }
-                    November { $Month = '11' }
-                    December { $Month = '12' }
+                    January     { $Month = '1' }
+                    February    { $Month = '2' }
+                    March       { $Month = '3' }
+                    April       { $Month = '4' }
+                    May         { $Month = '5' }
+                    June        { $Month = '6' }
+                    July        { $Month = '7' }
+                    August      { $Month = '8' }
+                    September   { $Month = '9' }
+                    October     { $Month = '10' }
+                    November    { $Month = '11' }
+                    December    { $Month = '12' }
 
                 }
 
@@ -172,8 +172,8 @@ Function Get-Month {
             
             }
 
-            $Global:StartOfMonth = Get-Date -Month $Month -Year $MonthYear -Day 1 -Hour 0 -Minute 0 -Second 0 -Millisecond 0
-            $Global:EndOfMonth = ($StartOfMonth).AddMonths(1).AddTicks(-1)
+            $StartOfMonth = Get-Date -Month $Month -Year $MonthYear -Day 1 -Hour 0 -Minute 0 -Second 0 -Millisecond 0
+            $EndOfMonth = ($StartOfMonth).AddMonths(1).AddTicks(-1)
 
         }
 

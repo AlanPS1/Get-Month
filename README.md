@@ -1,11 +1,14 @@
 # Get-Month
 
-The idea here is to make a function that can be sued to capture 1 months data for auditing purposes. Pipeline compatability will be used so that other date orients PowerShell Cmdlets can intergrate with it.
+The idea here is to make a function that can be used to capture 1 months data for reporting purposes. Pipeline compatability will be used so that other date oriented PowerShell Cmdlets can intergrate with it.
 
-This was copied and pasted from a script I wrote. The function, "Get-Month" was a worker function but it got me thinking about the potential of a function that is further developped and could scale out.
+This was copied and pasted from a production script I wrote. The function, "Get-Month" was a worker function but it got me thinking about the potential of a function that is further developped and could scale out.
+
+I use the dates locally on my lapton en-GB and in Azure Automation sandbox and the locale is en-US. Not all formats translate easily accross so as part of the devlopment process I plan to investigate that and seek to bridge the gap were format specifiers are wildly diferent.
 
 ## ShouldDo
-#### (to be continued)
+
+### (to be continued)
 
 + Handle multiple standard date & time formats
 + PipeLine compatible
@@ -13,7 +16,8 @@ This was copied and pasted from a script I wrote. The function, "Get-Month" was 
 + For the current year, if the Month requested is December and December is still to come, assume the year prior
 
 ## ToDo - off the top of my head
-#### (to be continued)
+
+### (to be continued)
 
 + PipeLine compatability
 + Address variable scope etc
